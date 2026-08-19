@@ -1,0 +1,28 @@
+VEDB raw video
+    ↓
+frame_sampling/
+eb_frameprocessing_cluster_2026.py
+    ↓
+Baseline 224×224 frames
+    │
+    ├───────────────┐
+    ↓               ↓
+gaze alignment    Baseline
+    ↓
+gaze/
+eb_2026_HumanGazeProcessing_1.py
+    ↓
+frame-aligned gaze
+    ↓
+conditions/
+eb_foveal_cropping.py
+    ├── fixation metadata
+    └── Fovea-Gaze
+    ↓
+eb_periph_gaze_cropping_v2.py
+    └── Periph
+          ↓
+neurofovea/
+Metamer_Transform_fixed_v2_fastbatch.py
+          ↓
+       Periph-NF

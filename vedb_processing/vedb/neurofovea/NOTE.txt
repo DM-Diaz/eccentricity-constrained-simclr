@@ -1,0 +1,3 @@
+from https://github.com/ArturoDeza/NeuroFovea_PyTorch
+
+Modified: Metamer_Transform.py --> Metamer_Transform_fixed_v2_fastbatch.py

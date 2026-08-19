@@ -1,0 +1,51 @@
+{
+  "data_root": "/user_data/dylandia/eb_processedData/forProcessing/2026_frames_224",
+  "manifest_csv": "/user_data/dylandia/eb_processedData/in_domain_core17_manifest.csv",
+  "checkpoint": "/user_data/dylandia/eb_notebooks/SimCLR-master/runs/Baseline_SimCLR_Jan282026/checkpoint_0120.pth.tar",
+  "path_template": "{data_root}/{session}/{filename}",
+  "session_col": "session",
+  "filename_col": "filename",
+  "split_col": "split",
+  "ok_col": "ok",
+  "label_col": "task",
+  "finetune_splits": [
+    "train"
+  ],
+  "eval_splits": [
+    "val"
+  ],
+  "final_eval_splits": [
+    "test"
+  ],
+  "require_ok": true,
+  "strict_paths": false,
+  "unseen_eval_policy": "drop",
+  "max_finetune_items": 0,
+  "max_eval_items": 0,
+  "arch": "resnet18",
+  "image_size": 224,
+  "batch_size": 256,
+  "stage": "both",
+  "probe_epochs": 20,
+  "finetune_epochs": 100,
+  "probe_lr": 0.001,
+  "finetune_lr": 0.0006,
+  "unfreeze": "layer4",
+  "bn_eval_during_probe": true,
+  "weight_decay": 0.0001,
+  "warmup_epochs": 5,
+  "select_metric": "macro_f1",
+  "label_smoothing": 0.0,
+  "early_stop_patience": 0,
+  "fp16": true,
+  "workers": 8,
+  "pin_memory": true,
+  "persistent_workers": true,
+  "prefetch_factor": 4,
+  "dataloader_timeout": 0,
+  "drop_last": false,
+  "seed": 1337,
+  "deterministic": false,
+  "out_dir": "/user_data/dylandia/eb_processedData/in_domain_classifier_runs/New_Base_Resnet18",
+  "run_name": "base_indomain_valselect_testonce_301395"
+}

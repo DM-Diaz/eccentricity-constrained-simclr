@@ -1,0 +1,31 @@
+{
+  "command": "/user_data/dylandia/eb_notebooks/places365_scene_classifier_v2.py --data-root /lab_data/tarrlab/common/datasets/Places365/train --checkpoint /user_data/dylandia/eb_notebooks/SimCLR-master/runs/PeriphTTM_SimCLR_Feb042026/checkpoint_0120.pth.tar --out-dir /user_data/dylandia/eb_processedData/places365_classifier_runs/periph_ttm/resnet18_20260207_231049_308563 --arch resnet18 --train-frac 0.8 --seed 1337 --img-size 224 --stage both --probe-epochs 20 --finetune-epochs 100 --unfreeze layer4 --probe-lr 1e-3 --finetune-lr 3e-4 --weight-decay 0.01 --label-smoothing 0.1 -b 60 -j 4 --pin-memory --persistent-workers --prefetch-factor 4 --dataloader-timeout 0 --mp-context fork --select-metric top1 --early-stop-metric loss --early-stop-patience 10 --max-confusions 2000 --split-cache /user_data/dylandia/eb_processedData/places365_classifier_runs/base/resnet18_20260203_043434_306387/split_indices.npz",
+  "timestamp": "20260207_231115",
+  "host": "mind-1-29",
+  "platform": "Linux-4.18.0-372.32.1.el8_6.x86_64-x86_64-with-glibc2.28",
+  "python": "3.11.13 (main, Jun  5 2025, 13:12:00) [GCC 11.2.0]",
+  "torch": "2.5.1",
+  "cuda_available": true,
+  "gpu_name": "NVIDIA L40S",
+  "seed": 1337,
+  "data_root": "/lab_data/tarrlab/common/datasets/Places365/train",
+  "n_total": 1803460,
+  "n_train": 1442768,
+  "n_eval": 360692,
+  "checkpoint": "/user_data/dylandia/eb_notebooks/SimCLR-master/runs/PeriphTTM_SimCLR_Feb042026/checkpoint_0120.pth.tar",
+  "checkpoint_sha256": "1ce241a9ef406b4e7626816134f5a8c3e16cd94de508986c68a06abbddef8285",
+  "ckpt_load_report": {
+    "chosen_prefix": "backbone.",
+    "overlap": 120,
+    "target_keys": 120,
+    "missing": 0,
+    "unexpected": 4,
+    "example_missing": [],
+    "example_unexpected": [
+      "fc.0.weight",
+      "fc.0.bias",
+      "fc.2.weight",
+      "fc.2.bias"
+    ]
+  }
+}

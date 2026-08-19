@@ -1,0 +1,23 @@
+{
+  "command": "/user_data/dylandia/eb_notebooks/places365_scene_classifier_imagenet_v2.py --data-root /lab_data/tarrlab/common/datasets/Places365/train --checkpoint /lab_data/hendersonlab/ckpts/checkpoint_120-resnet18-simclr-imagenet100.ckpt --out-dir /user_data/dylandia/eb_processedData/places365_classifier_runs/base_imagenet100/net100_resnet18_20260402_080446_380379 --arch resnet18 --train-frac 0.8 --seed 1337 --img-size 224 --stage both --probe-epochs 20 --finetune-epochs 100 --unfreeze layer4 --probe-lr 1e-3 --finetune-lr 3e-4 --weight-decay 0.01 --label-smoothing 0.1 -b 60 -j 4 --pin-memory --persistent-workers --prefetch-factor 4 --dataloader-timeout 0 --mp-context fork --select-metric top1 --early-stop-metric loss --early-stop-patience 10 --max-confusions 2000 --split-cache /user_data/dylandia/eb_processedData/places365_classifier_runs/base/resnet18_20260203_043434_306387/split_indices.npz",
+  "timestamp": "20260402_080926",
+  "host": "mind-0-26",
+  "platform": "Linux-4.18.0-372.32.1.el8_6.x86_64-x86_64-with-glibc2.28",
+  "python": "3.11.13 (main, Jun  5 2025, 13:12:00) [GCC 11.2.0]",
+  "torch": "2.5.1",
+  "cuda_available": true,
+  "gpu_name": "NVIDIA GeForce RTX 3090",
+  "seed": 1337,
+  "data_root": "/lab_data/tarrlab/common/datasets/Places365/train",
+  "n_total": 1803460,
+  "n_train": 1442768,
+  "n_eval": 360692,
+  "checkpoint": "/lab_data/hendersonlab/ckpts/checkpoint_120-resnet18-simclr-imagenet100.ckpt",
+  "checkpoint_sha256": "e384864c289f4bfc14cb2bd24c93c799dc8cffee2fa8907769fa8a45c32ae202",
+  "ckpt_load_report": {
+    "matched": 120,
+    "skipped": 12,
+    "missing": 0,
+    "unexpected": 0
+  }
+}

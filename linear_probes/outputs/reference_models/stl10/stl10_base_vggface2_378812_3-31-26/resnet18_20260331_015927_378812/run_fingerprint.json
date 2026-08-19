@@ -1,0 +1,26 @@
+{
+  "command": "/user_data/dylandia/eb_notebooks/vggface2_identity_classifier_v2.py --data-root /lab_data/hendersonlab/datasets/VGG-Face2/data/train --checkpoint /user_data/dylandia/eb_processedData/res18_stl10_100_ckpt/checkpoint_100.tar --out-dir /user_data/dylandia/eb_processedData/vggface2_classifier_runs/new_base_stl10/resnet18_20260331_015927_378812 --arch resnet18 --stage both --probe-epochs 20 --finetune-epochs 100 --unfreeze layer4 --select-metric top1 --label-smoothing 0.1 --probe-lr 1e-3 --finetune-lr 3e-4 --weight-decay 0.01 -b 60 -j 4 --prefetch-factor 4 --dataloader-timeout 0 --mp-context fork --allow-truncated-images --split-cache /user_data/dylandia/eb_processedData/vggface2_classifier_runs/new_base/resnet18_20260206_171730_307798/split_indices.npz",
+  "timestamp": "20260331_021502",
+  "host": "mind-1-29",
+  "platform": "Linux-4.18.0-372.32.1.el8_6.x86_64-x86_64-with-glibc2.28",
+  "python": "3.11.13 (main, Jun  5 2025, 13:12:00) [GCC 11.2.0]",
+  "torch": "2.5.1",
+  "cuda_available": true,
+  "gpu_name": "NVIDIA L40S",
+  "seed": 1337,
+  "data_root": "/lab_data/hendersonlab/datasets/VGG-Face2/data/train",
+  "n_total": 3141890,
+  "n_train": 2513527,
+  "n_eval": 628363,
+  "checkpoint": "/user_data/dylandia/eb_processedData/res18_stl10_100_ckpt/checkpoint_100.tar",
+  "checkpoint_sha256": "cb3fb46f60ef756c33bd683619c7184218edc9e938420fbbefffffa81377b992",
+  "ckpt_load_report": {
+    "chosen_prefix": "encoder.",
+    "overlap": 120,
+    "target_keys": 120,
+    "missing": 0,
+    "unexpected": 0,
+    "example_missing": [],
+    "example_unexpected": []
+  }
+}

@@ -1,0 +1,73 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Environments
+# =========================
+.env
+.env.*
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# Editors / OS
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# SLURM / runtime logs
+# =========================
+slurm-*.out
+*.out
+*.err
+*.log
+
+# =========================
+# Model checkpoints / weights
+# Keep these on Hugging Face
+# =========================
+*.pt
+*.pth
+*.pth.tar
+*.ckpt
+*.safetensors
+
+# =========================
+# Large derived arrays / caches
+# =========================
+*.npz
+
+# Optional: uncomment if large .npy files appear
+# *.npy
+
+# =========================
+# Temporary / backup files
+# =========================
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~

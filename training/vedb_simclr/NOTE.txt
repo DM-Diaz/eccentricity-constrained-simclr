@@ -1,0 +1,8 @@
+from: https://github.com/sthalles/SimCLR
+
+Modified: run.py --> run_updated_fixed_v5.py
+
+Kept from original repo:
+simclr.py
+models/resnet_simclr.py
+

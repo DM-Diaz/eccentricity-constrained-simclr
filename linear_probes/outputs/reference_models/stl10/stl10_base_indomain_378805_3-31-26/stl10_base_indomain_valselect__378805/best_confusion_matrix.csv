@@ -1,0 +1,18 @@
+true\pred,computer work,cooking,exploring,playing cards,playing frisbee,playing piano,playing poker,playing pool,playing sudoku,playing video game,preparing,skateboarding,socializing,solving rubik's cube,standing,walking,washing dishes
+computer work,223,1,14,57,0,0,12,0,372,0,1,0,15,44,0,5,0
+cooking,8,870,0,0,0,0,0,0,5,44,1,0,0,0,0,7,47
+exploring,0,0,79,0,0,0,0,0,0,0,0,0,0,0,0,191,0
+playing cards,0,364,0,137,0,0,1,0,84,0,0,0,24,0,0,381,9
+playing frisbee,0,0,7,0,530,0,0,0,0,0,0,2,1,0,0,126,0
+playing piano,887,1,0,0,0,0,0,0,0,0,9,0,0,0,0,3,10
+playing poker,30,1,0,0,0,0,818,1,19,0,20,0,3,1,0,7,0
+playing pool,2,0,0,0,0,0,1,649,0,0,12,1,1,0,0,3,1
+playing sudoku,9,0,0,13,0,0,0,0,934,0,9,0,8,4,0,1,0
+playing video game,14,570,0,1,0,0,0,1,0,0,0,0,1,0,0,269,0
+preparing,2,6,0,0,0,0,0,0,0,0,28,0,2,0,0,37,33
+skateboarding,0,0,0,0,5,0,0,0,0,0,2,670,0,0,0,83,0
+socializing,0,3,0,11,4,0,0,0,3,0,36,0,22,1,0,614,0
+solving rubik's cube,131,0,0,0,0,0,0,0,53,0,0,0,0,0,0,0,0
+standing,2,0,2,0,27,0,0,0,0,0,1,0,3,0,0,74,5
+walking,52,97,265,48,115,1,25,22,17,11,139,44,103,4,5,12277,73
+washing dishes,0,101,0,0,0,0,0,0,0,0,0,0,0,0,0,0,391

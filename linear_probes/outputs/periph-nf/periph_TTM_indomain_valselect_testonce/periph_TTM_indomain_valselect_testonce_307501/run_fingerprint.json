@@ -1,0 +1,31 @@
+{
+  "command": "/user_data/dylandia/eb_notebooks/SimCLR-master/in_domain_classifier_simclr_staged_robust_v3.py --data-root /user_data/dylandia/eb_processedData/forProcessing/ttm_frames/2026_periph_ttm_frames --manifest-csv /user_data/dylandia/eb_processedData/in_domain_core17_manifest.csv --checkpoint /user_data/dylandia/eb_notebooks/SimCLR-master/runs/PeriphTTM_SimCLR_Feb042026/checkpoint_0120.pth.tar --label-col task --finetune-splits train --eval-splits val --final-eval-splits test --require-ok --arch resnet18 --stage both --probe-epochs 20 --probe-lr 1e-3 --bn-eval-during-probe --unfreeze layer4 --finetune-epochs 100 --finetune-lr 6e-4 --unseen-eval-policy drop --select-metric macro_f1 -b 256 -j 8 --pin-memory --persistent-workers --prefetch-factor 4 --dataloader-timeout 0 --fp16 --seed 1337 --out-dir /user_data/dylandia/eb_processedData/in_domain_classifier_runs/New_Periph_TTM_Resnet18 --run-name periph_TTM_indomain_valselect_testonce_307501",
+  "timestamp": "20260206_002839",
+  "host": "mind-0-26",
+  "platform": "Linux-4.18.0-372.32.1.el8_6.x86_64-x86_64-with-glibc2.28",
+  "python": "3.11.13 (main, Jun  5 2025, 13:12:00) [GCC 11.2.0]",
+  "torch": "2.5.1",
+  "torchvision": "0.20.1",
+  "cuda_available": true,
+  "gpu_name": "NVIDIA GeForce RTX 3090",
+  "seed": 1337,
+  "deterministic": false,
+  "manifest_csv": "/user_data/dylandia/eb_processedData/in_domain_core17_manifest.csv",
+  "manifest_sha256": "04acdba59270a1b54ef30c7959640c9b4ced147f8e0cc7ec7ef6353cbc8f266d",
+  "checkpoint": "/user_data/dylandia/eb_notebooks/SimCLR-master/runs/PeriphTTM_SimCLR_Feb042026/checkpoint_0120.pth.tar",
+  "checkpoint_sha256": "2a84a95ee427f3a82c5ed38427faca453809b170bf5b8e17752507ee4f9db287",
+  "ckpt_load_report": {
+    "matched": 120,
+    "skipped": 4,
+    "missing": 2,
+    "unexpected": 0
+  },
+  "finetune_splits": [
+    "train"
+  ],
+  "eval_splits": [
+    "val"
+  ],
+  "finetune_n": 116540,
+  "eval_n": 23626
+}

@@ -1,0 +1,19 @@
+{
+  "computer work": 0,
+  "cooking": 1,
+  "exploring": 2,
+  "playing cards": 3,
+  "playing frisbee": 4,
+  "playing piano": 5,
+  "playing poker": 6,
+  "playing pool": 7,
+  "playing sudoku": 8,
+  "playing video game": 9,
+  "preparing": 10,
+  "skateboarding": 11,
+  "socializing": 12,
+  "solving rubik's cube": 13,
+  "standing": 14,
+  "walking": 15,
+  "washing dishes": 16
+}
